@@ -1,14 +1,20 @@
-const string = prompt('scrivi una parola');
-const x = string
+const string = prompt( ' Inserisci la parola ');  
+const value = palindroma (string);  
+console.log(value);  
 
-const arrayChar = string.split( x); 
-const reverseArray = arrayChar.reverse (x); 
+function palindroma (parola){  
+    const arrValue = string.split ('');   
+    
+    const reveArrVal = arrValue.reverse();   
+    
+    const revString = reveArrVal.join('');  
+  
+if (string == revString)   
+{  
+alert('è palindroma ');   
+}  
+else {  
+alert (' non è palindroma' );   
+}  
+}  
 
-function palindroma(){
-    if (arrayChar == reverseArray) {
-        document.write('è palindroma')
-    } 
-    else{
-        document.write('non è palindroma')
-    }
-}
